@@ -8,7 +8,6 @@
 <style>
 :root {
   --rose:#F43F5E;
-  --coral:#FB923C;
   --light:#FFF1F2;
   --dark:#1f2937;
 }
@@ -61,15 +60,6 @@ section{
 .card:hover{
   transform:translateY(-6px) scale(1.02);
   box-shadow:0 12px 25px rgba(0,0,0,.2);
-}
-
-.metric{
-  display:inline-block;
-  background:linear-gradient(45deg,var(--rose),var(--coral));
-  color:white;
-  padding:6px 12px;
-  border-radius:20px;
-  font-weight:bold;
 }
 
 /* MODAL */
@@ -151,169 +141,62 @@ section{
 <p>Project management professional with experience leading cross-functional initiatives across education, technology consulting, and social services. Skilled in stakeholder engagement, process improvement, and data-driven decision-making.</p>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Selected Project Experience</h2>
 
 <div class="cards">
-
-<div class="card" onclick="openModal('p1')">
-<h3>Veteran Services Culture Rebrand</h3>
-<p><strong>University of Nevada, Reno</strong></p>
-</div>
-
-<div class="card" onclick="openModal('p2')">
-<h3>Microsoft Co-Sell Program Handoff</h3>
-<p><strong>Affirma</strong></p>
-</div>
-
-<div class="card" onclick="openModal('p3')">
-<h3>Tenant Curriculum Rollout</h3>
-<p><strong>Telecare – HART</strong></p>
-<p><span class="metric counter" data-target="97">0</span>% reduction in eviction rates</p>
-</div>
-
-<div class="card" onclick="openModal('p4')">
-<h3>SOAR Process Tailoring</h3>
-<p><strong>Telecare – HART</strong></p>
-</div>
-
-<div class="card" onclick="openModal('p5')">
-<h3>Document Compliance Automation</h3>
-<p><strong>Telecare – HART</strong></p>
-<p><span class="metric counter" data-target="95">0</span>% compliance</p>
-</div>
-
+<div class="card" onclick="openModal('p1')"><h3>Veteran Services Culture Rebrand</h3><p><strong>University of Nevada, Reno</strong></p></div>
+<div class="card" onclick="openModal('p2')"><h3>Microsoft Co-Sell Program Handoff</h3><p><strong>Affirma</strong></p></div>
+<div class="card" onclick="openModal('p3')"><h3>Tenant Curriculum Rollout</h3><p><strong>Telecare – HART</strong></p><p><strong>97%</strong> reduction in eviction rates</p></div>
+<div class="card" onclick="openModal('p4')"><h3>SOAR Process Tailoring</h3><p><strong>Telecare – HART</strong></p></div>
+<div class="card" onclick="openModal('p5')"><h3>Document Compliance Automation</h3><p><strong>Telecare – HART</strong></p><p><strong>95%</strong> compliance</p></div>
 </div>
 </section>
 
-<!-- FULL MODALS -->
-
-<div id="p1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('p1')">✖</span>
-<h2>Veteran Services Culture Rebrand</h2>
-<h3>Situation</h3>
-<p>Despite seeing a large increase in participation and engagement in Veteran Services events, Veteran Services staff observed that certain demographics of students and veterans remained un-engaged in events and services. The Veteran Services Program Manager tasked me with developing and executing a plan to increase the diversity of our engagement.</p>
-<h3>Tools</h3>
-<p>Surveys, Expert Opinions, Focus Groups, Event Planning & Coordination, Research, Data Analysis</p>
-<h3>Actions</h3>
-<ul>
-<li>Met with University demographics staff to discuss program objectives and design questions for a general engagement survey</li>
-<li>Planned and facilitated focus groups for student-veterans and non student-veterans</li>
-<li>Analyzed quantitative data regarding event attendance and facility utilization</li>
-<li>Created and executed an engagement plan based on collected data</li>
-</ul>
-<h3>Results</h3>
-<p>Veteran services staff implemented an event strategy that increased engagement among female veterans, veterans of color, and veterans with children. The broadening of the event selection increased engagement on campus overall and ensured greater access to and awareness of available benefits for student veterans.</p>
-</div></div>
-
-<div id="p2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('p2')">✖</span>
-<h2>Microsoft Co-Sell Program Handoff</h2>
-<h3>Situation</h3>
-<p>While serving as a Support Analyst at Affirma, I was tasked with developing and implementing a transition plan for the handoff of the Microsoft Co-Sell program to another vendor to ensure continuity and program compliance.</p>
-<h3>Tools</h3>
-<p>Azure Cloud Database, Microsoft Suite (Excel, Outlook, Teams), Staff Training, Stakeholder Identification Analysis and Engagement, Knowledge Transfer</p>
-<h3>Actions</h3>
-<ul>
-<li>Developed and presented transition plan to Affirma Business Process Outsourcing Director</li>
-<li>Provided regular updates to BPO director, lead support analyst, and Co-Sell program management</li>
-<li>Identified and engaged relevant vendor staff for knowledge transfer</li>
-<li>Facilitated and led knowledge transfer sessions between Affirma Deal Review and Validation teams and incoming vendor staff</li>
-<li>Assisted reduced staff in maintaining SLA compliance during transition period</li>
-</ul>
-<h3>Results</h3>
-<p>Successfully managed the handoff of the Microsoft Co-Sell program while maintaining all contract Service Level Agreements (SLAs).</p>
-</div></div>
-
-<div id="p3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('p3')">✖</span>
-<h2>Tenant Curriculum Rollout</h2>
-<h3>Situation</h3>
-<p>Shortly after joining Telecare Corporation’s HART, I was tasked by the HART Program Manager with implementing Telecare’s Tenant Curriculum across several supportive housing sites throughout Santa Barbara County.</p>
-<h3>Tools</h3>
-<p>Power Point, Technical Troubleshooting, Staff Training, Presentation, Cross-Cultural Communication, Stakeholder Research & Relationship Management, Smartsheet, Data Cleaning, Reporting</p>
-<h3>Actions</h3>
-<ul>
-<li>Researched and engaged with stakeholders from supportive housing sites across Santa Barbara County</li>
-<li>Learned and presented Tenant Curriculum content to clients and supportive housing staff</li>
-<li>Led weekly meetings proving status updates to HART program manager on implementation status</li>
-<li>Trained HART staff on how to effectively facilitate tenant curriculum sessions and tailor lessons to diverse clientele</li>
-</ul>
-<h3>Results</h3>
-<p>Telecare corporation’s Housing Assistance and Retention Team rolled out the eight week tenant curriculum sessions across five supportive housing sites within the first year of program operations. HART increased access to knowledge, advice, and advocacy surrounding supportive housing for tenants transitioning from homelessness which contributed to a <span class="metric">97%</span> reduction in eviction rates among HART clients.</p>
-</div></div>
-
-<div id="p4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('p4')">✖</span>
-<h2>SOAR Process Tailoring</h2>
-<h3>Situation</h3>
-<p>As a Peer Recovery Coach at Telecare’s HART, I was tasked by the HART Program Manager with learning the Social Security Outreach Access and Recovery or SOAR process and tailoring a set of standards operating procedures to the specific needs of the Housing Assistance and Retention Team.</p>
-<h3>Tools</h3>
-<p>Smartsheet, Stakeholder Identification & Engagement, Collaborative Meetings, Resource Management</p>
-<h3>Actions</h3>
-<ul>
-<li>Leveraged available knowledge base to become the the program’s internal subject matter expert</li>
-<li>Developed an engagement strategy for external stakeholders across all supportive housing sites</li>
-<li>Tailored SOAR learning curriculum to HART program operations and clientele</li>
-<li>Created tailored work breakdown structure and schedule baseline for process implementation</li>
-<li>Briefed program manager and team members on SOAR methodology and tailored implementation plans to receive feedback and continuously improve operations</li>
-</ul>
-<h3>Results</h3>
-<p>Telecare HART implemented the SOAR process for clients at supportive housing sites across Santa Barbara county increasing access to assistance and accurate information regarding Social Security Disability Insurance applications.</p>
-</div></div>
-
-<div id="p5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('p5')">✖</span>
-<h2>Document Compliance Automation</h2>
-<h3>Situation</h3>
-<p>A compliance audit determined that our document compliance system was not scalable past one hundred clients and would need to be upgraded in order to maintain program compliance with Telecare Corporation’s Release of Information and documentation standards.</p>
-<h3>Tools</h3>
-<p>Smartsheet, Outlook, Technical Documentation Research, Stakeholder Engagement</p>
-<h3>Actions</h3>
-<ul>
-<li>Independently developed a user story for an automatic document expiry warning system</li>
-<li>Collaborated with HART Program Manager and Case management staff to define system requirements</li>
-<li>Researched Smartsheet automation functions</li>
-<li>Developed, implemented, and tested system functions</li>
-<li>Held retrospectives and feedback sessions to gain feedback and continuously improve system function</li>
-</ul>
-<h3>Results</h3>
-<p>The Smartsheet automation system replaced a manual process of searching for expired releases of information with an automatic system that informed the relevant case management staff when their client’s ROI was within fourteen days of expiring. This solution satisfied our compliance department as it proved to be scalable far beyond our current caseload and enabled us to maintain a <span class="metric">95%</span> document compliance rate.</p>
-</div></div>
-
+<!-- SKILLS -->
 <section id="skills">
 <h2>Skills</h2>
 
 <div class="cards">
-
-<div class="card">
-<h3>Project Management Core Competencies</h3>
-<ul>
-<li><strong>Stakeholder Management:</strong> Proven ability to identify, engage, and manage stakeholders across all levels to ensure project alignment and success</li>
-<li><strong>Resource Management:</strong> Experience deconflicting resources across multiple projects and supporting SMEs and clients with scope and requirements</li>
-<li><strong>Process Optimization:</strong> Development of SOPs, technical solutions, and automation systems to improve operational efficiency</li>
-<li><strong>Strategic Planning:</strong> Designed engagement strategies resulting in a <span class="metric">300%</span> increase in participation</li>
-<li><strong>Project Lifecycle Management:</strong> Skilled in requirements definition, schedule baselines, and post-project analysis</li>
-</ul>
+<div class="card" onclick="openModal('s1')"><h3>Project Management Core Competencies</h3></div>
+<div class="card" onclick="openModal('s2')"><h3>Operational & Analytical Skills</h3></div>
+<div class="card" onclick="openModal('s3')"><h3>Technical Proficiency</h3></div>
 </div>
-
-<div class="card">
-<h3>Operational & Analytical Skills</h3>
-<ul>
-<li><strong>Data Analysis & Performance Auditing:</strong> Conducts data-driven audits using SQL and Excel to identify trends and optimize performance</li>
-<li><strong>Risk Assessment & Compliance:</strong> Experience applying NIST frameworks and maintaining SLA compliance across programs</li>
-<li><strong>Cross-Cultural Communication:</strong> Facilitates collaboration across international teams; conversational in Spanish and Mandarin Chinese</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Technical Proficiency</h3>
-<ul>
-<li><strong>Project Management Tools:</strong> Microsoft Project, Smartsheet, Asana</li>
-<li><strong>Data & CRM Systems:</strong> SQL, Azure Cloud Database, HMIS, Dynamics 365, CRM platforms</li>
-<li><strong>Collaboration Tools:</strong> Microsoft Suite, Google Workspace, Zoom, Slack</li>
-<li><strong>Cybersecurity & IT:</strong> NIST Security Framework, Splunk, Active Directory, Windows/Linux/OSX</li>
-</ul>
-</div>
-
-</div>
-
 </section>
+
+<!-- SKILLS MODALS -->
+<div id="s1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s1')">✖</span>
+<h2>Project Management Core Competencies</h2>
+<ul>
+<li><strong>Stakeholder Management:</strong> Proven record of identifying, engaging, and managing crucial relationships to ensure project success</li>
+<li><strong>Resource Management:</strong> Deconflicting resources across multiple projects and supporting SMEs and clients</li>
+<li><strong>Process Optimization:</strong> Development of SOPs, automation systems, and technical solutions</li>
+<li><strong>Strategic Planning:</strong> Developed engagement strategies resulting in a <strong>300%</strong> increase in participation</li>
+<li><strong>Project Lifecycle Management:</strong> Requirements definition, scheduling, and lessons learned analysis</li>
+</ul>
+</div></div>
+
+<div id="s2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s2')">✖</span>
+<h2>Operational & Analytical Skills</h2>
+<ul>
+<li><strong>Data Analysis:</strong> SQL and Excel-based performance auditing</li>
+<li><strong>Risk & Compliance:</strong> NIST frameworks and SLA adherence</li>
+<li><strong>Cross-Cultural Communication:</strong> International team collaboration; Spanish and Mandarin proficiency</li>
+</ul>
+</div></div>
+
+<div id="s3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s3')">✖</span>
+<h2>Technical Proficiency</h2>
+<ul>
+<li><strong>Project Tools:</strong> Microsoft Project, Smartsheet, Asana</li>
+<li><strong>Data Systems:</strong> SQL, Azure, HMIS, Dynamics 365</li>
+<li><strong>Collaboration:</strong> Microsoft Suite, Google Workspace, Slack</li>
+<li><strong>IT & Security:</strong> NIST, Splunk, Active Directory, OS environments</li>
+</ul>
+</div></div>
+
+<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
 <p>📧 daveroyst@gmail.com</p>
@@ -336,21 +219,11 @@ function closeModal(id){
   document.getElementById(id).classList.remove("show");
 }
 
-const counters=document.querySelectorAll('.counter');
-counters.forEach(counter=>{
-  let update=()=>{
-    let target=+counter.getAttribute('data-target');
-    let count=+counter.innerText;
-    let inc=target/50;
-    if(count<target){
-      counter.innerText=Math.ceil(count+inc);
-      setTimeout(update,30);
-    } else {
-      counter.innerText=target;
-    }
-  }
-  update();
-});
+window.onclick=function(e){
+  document.querySelectorAll(".modal").forEach(m=>{
+    if(e.target===m) m.classList.remove("show");
+  });
+}
 
 window.onscroll=function(){
   document.getElementById("topBtn").style.display=
