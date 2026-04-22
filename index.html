@@ -20,7 +20,6 @@ body{
   color:var(--dark);
 }
 
-/* NAV */
 nav{
   position:fixed;top:0;width:100%;
   background:white;
@@ -33,7 +32,6 @@ nav{
 .logo{color:var(--rose);font-weight:bold;}
 .menu{display:flex;}
 .menu a{margin-left:20px;text-decoration:none;color:var(--dark);}
-.hamburger{display:none;cursor:pointer;}
 
 section{
   padding:80px 20px;
@@ -62,7 +60,6 @@ section{
   box-shadow:0 12px 25px rgba(0,0,0,.2);
 }
 
-/* MODAL */
 .modal{
   display:none;
   position:fixed;
@@ -74,7 +71,6 @@ section{
 
 .modal.show{
   display:flex;
-  animation:fadeIn .3s ease;
 }
 
 .modal-content{
@@ -84,36 +80,26 @@ section{
   max-width:800px;
   max-height:90vh;
   overflow:auto;
-  transform:translateY(30px);
-  opacity:0;
-  animation:slideUp .4s ease forwards;
   line-height:1.7;
 }
 
-.modal-content h2{margin-bottom:15px;}
-.modal-content h3{margin-top:20px;margin-bottom:8px;color:var(--rose);}
-.modal-content p{margin-bottom:15px;}
-.modal-content ul{margin:15px 0 20px 25px;}
-.modal-content li{margin-bottom:10px;}
+.modal-content h3{
+  margin-top:20px;
+  color:var(--rose);
+}
 
-@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}
-@keyframes slideUp{to{transform:translateY(0);opacity:1;}}
+.modal-content ul{
+  margin:15px 0 20px 25px;
+}
+
+.modal-content li{
+  margin-bottom:10px;
+}
 
 .close{
   float:right;
   cursor:pointer;
   font-size:20px;
-}
-
-#topBtn{
-  position:fixed;
-  bottom:20px;right:20px;
-  display:none;
-}
-
-@media(max-width:768px){
-  .menu{display:none;flex-direction:column;}
-  .hamburger{display:block;}
 }
 </style>
 </head>
@@ -122,8 +108,7 @@ section{
 
 <nav>
 <div class="logo">David Royston</div>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-<div class="menu" id="menu">
+<div class="menu">
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
@@ -141,78 +126,135 @@ section{
 <p>Project management professional with experience leading cross-functional initiatives across education, technology consulting, and social services. Skilled in stakeholder engagement, process improvement, and data-driven decision-making.</p>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
 <h2>Selected Project Experience</h2>
 
 <div class="cards">
-<div class="card" onclick="openModal('p1')"><h3>Veteran Services Culture Rebrand</h3><p><strong>University of Nevada, Reno</strong></p></div>
-<div class="card" onclick="openModal('p2')"><h3>Microsoft Co-Sell Program Handoff</h3><p><strong>Affirma</strong></p></div>
-<div class="card" onclick="openModal('p3')"><h3>Tenant Curriculum Rollout</h3><p><strong>Telecare – HART</strong></p><p><strong>97%</strong> reduction in eviction rates</p></div>
-<div class="card" onclick="openModal('p4')"><h3>SOAR Process Tailoring</h3><p><strong>Telecare – HART</strong></p></div>
-<div class="card" onclick="openModal('p5')"><h3>Document Compliance Automation</h3><p><strong>Telecare – HART</strong></p><p><strong>95%</strong> compliance</p></div>
+<div class="card" onclick="openModal('p1')"><h3>Veteran Services Culture Rebrand</h3></div>
+<div class="card" onclick="openModal('p2')"><h3>Microsoft Co-Sell Program Handoff</h3></div>
+<div class="card" onclick="openModal('p3')"><h3>Tenant Curriculum Rollout</h3></div>
+<div class="card" onclick="openModal('p4')"><h3>SOAR Process Tailoring</h3></div>
+<div class="card" onclick="openModal('p5')"><h3>Document Compliance Automation</h3></div>
 </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-<h2>Skills</h2>
+<!-- PROJECT MODALS -->
 
-<div class="cards">
-<div class="card" onclick="openModal('s1')"><h3>Project Management Core Competencies</h3></div>
-<div class="card" onclick="openModal('s2')"><h3>Operational & Analytical Skills</h3></div>
-<div class="card" onclick="openModal('s3')"><h3>Technical Proficiency</h3></div>
-</div>
-</section>
+<div id="p1" class="modal"><div class="modal-content">
+<span class="close" onclick="closeModal('p1')">✖</span>
+<h2>Veteran Services Culture Rebrand</h2>
 
-<!-- SKILLS MODALS -->
-<div id="s1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s1')">✖</span>
-<h2>Project Management Core Competencies</h2>
+<h3>Situation</h3>
+<p>Despite seeing a large increase in participation and engagement in Veteran Services events, Veteran Services staff observed that certain demographics of students and veterans remained un-engaged in events and services. The Veteran Services Program Manager tasked me with developing and executing a plan to increase the diversity of our engagement.</p>
+
+<h3>Tools</h3>
+<p>Surveys, Expert Opinions, Focus Groups, Event Planning & Coordination, Research, Data Analysis</p>
+
+<h3>Actions</h3>
 <ul>
-<li><strong>Stakeholder Management:</strong> Proven record of identifying, engaging, and managing crucial relationships to ensure project success</li>
-<li><strong>Resource Management:</strong> Deconflicting resources across multiple projects and supporting SMEs and clients</li>
-<li><strong>Process Optimization:</strong> Development of SOPs, automation systems, and technical solutions</li>
-<li><strong>Strategic Planning:</strong> Developed engagement strategies resulting in a <strong>300%</strong> increase in participation</li>
-<li><strong>Project Lifecycle Management:</strong> Requirements definition, scheduling, and lessons learned analysis</li>
+<li>Met with University demographics staff to discuss program objectives and design questions for a general engagement survey</li>
+<li>Planned and facilitated focus groups for student-veterans and non student-veterans</li>
+<li>Analyzed quantitative data regarding event attendance and facility utilization</li>
+<li>Created and executed an engagement plan based on collected data</li>
 </ul>
+
+<h3>Result</h3>
+<p>Veteran services staff implemented an event strategy that increased engagement among female veterans, veterans of color, and veterans with children. The broadening of the event selection increased engagement on campus overall and ensured greater access to and awareness of available benefits for student veterans.</p>
 </div></div>
 
-<div id="s2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s2')">✖</span>
-<h2>Operational & Analytical Skills</h2>
+<div id="p2" class="modal"><div class="modal-content">
+<span class="close" onclick="closeModal('p2')">✖</span>
+<h2>Microsoft Co-Sell Program Handoff</h2>
+
+<h3>Situation</h3>
+<p>While serving as a Support Analyst at Affirma, I was tasked with developing and implementing a transition plan for the handoff of the Microsoft Co-Sell program to another vendor to ensure continuity and program compliance.</p>
+
+<h3>Tools</h3>
+<p>Azure Cloud Database, Microsoft Suite (Excel, Outlook, Teams), Staff Training, Stakeholder Identification Analysis and Engagement, Knowledge Transfer</p>
+
+<h3>Actions</h3>
 <ul>
-<li><strong>Data Analysis:</strong> SQL and Excel-based performance auditing</li>
-<li><strong>Risk & Compliance:</strong> NIST frameworks and SLA adherence</li>
-<li><strong>Cross-Cultural Communication:</strong> International team collaboration; Spanish and Mandarin proficiency</li>
+<li>Developed and presented transition plan to Affirma Business Process Outsourcing Director</li>
+<li>Provided regular updates to BPO director, lead support analyst, and Co-Sell program management</li>
+<li>Identified and engaged relevant vendor staff for knowledge transfer</li>
+<li>Facilitated and led knowledge transfer sessions between Affirma teams and incoming vendor staff</li>
+<li>Assisted reduced staff in maintaining SLA compliance during transition period</li>
 </ul>
+
+<h3>Result</h3>
+<p>Successfully managed the handoff of the Microsoft Co-Sell program while maintaining all contract Service Level Agreements (SLAs).</p>
 </div></div>
 
-<div id="s3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('s3')">✖</span>
-<h2>Technical Proficiency</h2>
+<div id="p3" class="modal"><div class="modal-content">
+<span class="close" onclick="closeModal('p3')">✖</span>
+<h2>Tenant Curriculum Rollout</h2>
+
+<h3>Situation</h3>
+<p>Shortly after joining Telecare Corporation’s HART, I was tasked by the HART Program Manager with implementing Telecare’s Tenant Curriculum across several supportive housing sites throughout Santa Barbara County.</p>
+
+<h3>Tools</h3>
+<p>Power Point, Technical Troubleshooting, Staff Training, Presentation, Cross-Cultural Communication, Stakeholder Research & Relationship Management, Smartsheet, Data Cleaning, Reporting</p>
+
+<h3>Actions</h3>
 <ul>
-<li><strong>Project Tools:</strong> Microsoft Project, Smartsheet, Asana</li>
-<li><strong>Data Systems:</strong> SQL, Azure, HMIS, Dynamics 365</li>
-<li><strong>Collaboration:</strong> Microsoft Suite, Google Workspace, Slack</li>
-<li><strong>IT & Security:</strong> NIST, Splunk, Active Directory, OS environments</li>
+<li>Researched and engaged with stakeholders from supportive housing sites across Santa Barbara County</li>
+<li>Learned and presented Tenant Curriculum content to clients and supportive housing staff</li>
+<li>Led weekly meetings providing status updates</li>
+<li>Trained staff to effectively facilitate sessions</li>
 </ul>
+
+<h3>Result</h3>
+<p>Telecare HART rolled out the eight week tenant curriculum across five sites within the first year, contributing to a <strong>97%</strong> reduction in eviction rates.</p>
 </div></div>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact</h2>
-<p>📧 daveroyst@gmail.com</p>
-<p>🔗 <a href="https://linkedin.com/in/d-royston">LinkedIn</a></p>
-</section>
+<div id="p4" class="modal"><div class="modal-content">
+<span class="close" onclick="closeModal('p4')">✖</span>
+<h2>SOAR Process Tailoring</h2>
 
-<button id="topBtn" onclick="topFunction()">↑</button>
+<h3>Situation</h3>
+<p>I was tasked with learning the SOAR process and tailoring SOPs to HART program needs.</p>
+
+<h3>Tools</h3>
+<p>Smartsheet, Stakeholder Engagement, Resource Management</p>
+
+<h3>Actions</h3>
+<ul>
+<li>Became internal subject matter expert</li>
+<li>Developed stakeholder engagement strategy</li>
+<li>Created WBS and schedule baseline</li>
+<li>Led continuous improvement sessions</li>
+</ul>
+
+<h3>Result</h3>
+<p>Improved access to SSDI application support across housing sites.</p>
+</div></div>
+
+<div id="p5" class="modal"><div class="modal-content">
+<span class="close" onclick="closeModal('p5')">✖</span>
+<h2>Document Compliance Automation</h2>
+
+<h3>Situation</h3>
+<p>A compliance audit determined that the system was not scalable.</p>
+
+<h3>Tools</h3>
+<p>Smartsheet, Outlook, Documentation Research</p>
+
+<h3>Actions</h3>
+<ul>
+<li>Developed user story for automation</li>
+<li>Defined requirements with stakeholders</li>
+<li>Built and tested system</li>
+<li>Held retrospectives</li>
+</ul>
+
+<h3>Result</h3>
+<p>Achieved <strong>95%</strong> compliance with scalable automation system.</p>
+</div></div>
 
 <script>
-function toggleMenu(){
-  const menu=document.getElementById("menu");
-  menu.style.display=menu.style.display==="flex"?"none":"flex";
-}
-
 function openModal(id){
-  document.getElementById(id).classList.add("show");
+  const modal=document.getElementById(id);
+  if(modal){modal.classList.add("show");}
 }
 
 function closeModal(id){
@@ -221,17 +263,8 @@ function closeModal(id){
 
 window.onclick=function(e){
   document.querySelectorAll(".modal").forEach(m=>{
-    if(e.target===m) m.classList.remove("show");
+    if(e.target===m){m.classList.remove("show");}
   });
-}
-
-window.onscroll=function(){
-  document.getElementById("topBtn").style.display=
-  document.documentElement.scrollTop>200?"block":"none";
-}
-
-function topFunction(){
-  window.scrollTo({top:0,behavior:'smooth'});
 }
 </script>
 
